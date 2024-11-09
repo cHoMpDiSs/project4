@@ -5,6 +5,12 @@
 using namespace std;
 
 char dig1, dig2, dig3, hyph, dig4, dig5, dig6, dig7;
+void AcknowledgeCall();
+
+void AckowledgeCall(){
+    cout << "Phone Number Dialed: " << dig1 << dig2 << dig3 << hyph << dig4 << dig5 << dig6 << dig7 << endl;
+}
+
 int toDigit(char &ch) {
     char c = toupper(ch);
     if (!isalnum(static_cast<unsigned char>(c))) {
@@ -52,7 +58,7 @@ int readDials(){
     verif5 = toDigit(dig5);
     verif6 = toDigit(dig6);
     verif7 = toDigit(dig7);
-    if (dig1 == -1 || dig2 == -1 || dig3 == -1 || verif4 == -1|| verif5 ==-1 || verif6 == -1 || verif7 == -1){
+    if (verif1 == -1 || verif2 == -1 || verif3 == -1 || verif4 == -1|| verif5 ==-1 || verif6 == -1 || verif7 == -1){
         return -1;
     }
     if (dig1 == '0'){
@@ -104,7 +110,7 @@ int main(){
                 cout << "ERROR - Hyphen is not in the correct position" << endl;
                 break;
             case 0:
-                cout << "Phone Number Dialed: " << dig1 << dig2 << dig3 << hyph << dig4 << dig5 << dig6 << dig7 << endl;
+                AckowledgeCall();
                 break;
         }
         cout << endl;
