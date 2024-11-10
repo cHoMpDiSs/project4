@@ -8,7 +8,7 @@ char dig1, dig2, dig3, hyph, dig4, dig5, dig6, dig7;
 void AcknowledgeCall();
 
 void AckowledgeCall(){
-    cout << "Phone Number Dialed: " << dig1 << dig2 << dig3 << hyph << dig4 << dig5 << dig6 << dig7 << endl;
+    cout << "Phone Number Dialed: " << dig1 << dig2 << dig3 << hyph << dig4 << dig5 << dig6 << dig7 << endl;    
 }
 
 int toDigit(char &ch) {
@@ -90,6 +90,7 @@ int main(){
         cout << "Enter a phone number: (Q to quit) ";
         cin >> dig1;
         if (dig1 == 'Q'){
+            cout << "Press any key to continue..." << endl;
             cin.ignore();
             cin.get();
             return 0;
