@@ -48,8 +48,6 @@ int toDigit(char &ch) {
     return 0;
 }
 int readDials(){
-//    char thing;
-    //Initialize variables and get user input for phone #
     int verif1, verif2, verif3, verif4, verif5, verif6, verif7;
     verif1 = toDigit(dig1);
     verif2 = toDigit(dig2);
